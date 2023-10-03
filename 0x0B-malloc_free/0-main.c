@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- *  * simple_print_buffer - prints buffer in hexa
- *   * @buffer: the address of memory to print
- *    * @size: the size of the memory to print
- *     *
- *      * Return: Nothing.
- *       */
+ * simple_print_buffer - prints buffer in hexa
+ * @buffer: the address of memory to print
+ * @size: the size of the memory to print
+ *
+ * Return: Nothing.
+ */
 void simple_print_buffer(char *buffer, unsigned int size)
 {
     unsigned int i;
@@ -17,9 +17,9 @@ void simple_print_buffer(char *buffer, unsigned int size)
     while (i < size)
     {
         if (i % 10)
-         {
+        {
             printf(" ");
-         }
+        }
         if (!(i % 10) && i)
         {
             printf("\n");
@@ -29,14 +29,16 @@ void simple_print_buffer(char *buffer, unsigned int size)
     }
     printf("\n");
 }
+
 /**
- *  * main - check the code for ALX School students.
- *   *
- *    * Return: Always 0.
- *     */
+ * main - check the code for ALX School students.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
     char *buffer;
+
     buffer = create_array(98, 'H');
     if  (buffer == NULL)
     {
@@ -47,5 +49,4 @@ int main(void)
     free(buffer);
     return (0);
 }
-
 

@@ -2,17 +2,17 @@
 #include "main.h"
 
 /**
- * * str_concat - a function that concatenates two strings
- * * @s1: holds the first string
- * * @s2: holds the second string
- * * Return: the pointer to a string
- * **/
+* str_concat - a function that concatenates two strings
+* @s1: holds the first string
+* @s2: holds the second string
+* Return: the pointer to a string
+**/
 
 char *str_concat(char *s1, char *s2)
 {
 	int i;
-        int j;
-        int k;
+	int j;
+	int k;
 	char *p;
 
 	i = 0;
@@ -34,8 +34,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		p[k] = *s1++;
 		k += 1;
-        }
+	}
+	while (*s2)
+	{
+		p[k] = *s2++;
+		k += 1;
+	}
 	return (p);
 }
-
 

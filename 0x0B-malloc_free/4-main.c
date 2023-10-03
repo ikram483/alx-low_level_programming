@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- *  * print_grid - prints a grid of integers
- *   * @grid: the address of the two dimensional grid
- *    * @width: width of the grid
- *     * @height: height of the grid
- *      *
- *       * Return: Nothing.
- *        */
+ * print_grid - prints a grid of integers
+ * @grid: the address of the two dimensional grid
+ * @width: width of the grid
+ * @height: height of the grid
+ *
+ * Return: Nothing.
+ */
 void print_grid(int **grid, int width, int height)
 {
     int w;
@@ -19,20 +19,21 @@ void print_grid(int **grid, int width, int height)
     while (h < height)
     {
         w = 0;
-	while (w < width)
+        while (w < width)
         {
             printf("%d ", grid[h][w]);
-	    w++;
+            w++;
         }
         printf("\n");
-	h++;
+        h++;
     }   
 }
+
 /**
- *  * main - check the code for ALX School students.
- *   *
- *    * Return: Always 0.
- *     */
+ * main - check the code for ALX School students.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
     int **grid;
@@ -47,7 +48,7 @@ int main(void)
     grid[0][3] = 98;
     grid[3][4] = 402;
     print_grid(grid, 6, 4);
-    free_grid(grid, 4); 
+    free_grid(grid, 4);
     return (0);
 }
 

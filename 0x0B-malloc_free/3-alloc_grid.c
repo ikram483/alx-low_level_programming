@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- * * alloc_grid - a function that returns a pointer to 2 dimensional array of int
- * * @width: integer
- * * @height: integer
- * * Return: return a pointer to the array otherwise return NULL
- * **/
+* alloc_grid - a function that returns a pointer to 2 dimensional array of int
+* @width: integer
+* @height: integer
+* Return: return a pointer to the array otherwise return NULL
+**/
 
 int **alloc_grid(int width, int height)
 {
@@ -29,13 +29,14 @@ int **alloc_grid(int width, int height)
 		{
 			for (i = i - 1; i >= 0; i--)
 			{
-  				free(p[i]);
+				free(p[i]);
 			}
 			free(p);
 			return (NULL);
-                }
+		}
 	}
-        for (i = 0; j < width; j++)
+	for (i = 0; j < width; j++)
 		p[i][j] = 0;
 	return (p);
 }
+
