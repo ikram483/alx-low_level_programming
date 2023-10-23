@@ -14,15 +14,11 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *f_ptr, *s_ptr;
 	size_t size;
-
 	size = 0;
-
 	if (head == NULL)
 		return (0);
-
 	s_ptr = head;
 	f_ptr = head->next;
-
 	while (f_ptr != NULL && f_ptr < s_ptr)
 	{
 		size += 1;
@@ -37,4 +33,3 @@ size_t print_listint_safe(const listint_t *head)
 
 	return (size);
 }
-
